@@ -1,8 +1,99 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
   padding: 2rem;
-  text-align: center;
+  max-width: 1200px;
+  background-image: url('https://th.bing.com/th/id/OIP.whjL4LDaB1vG7P1YzL_c2QHaEK?rs=1&pid=ImgDetMain');
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.page-container {
+  padding: 1rem;
+}
+
+/* Navigation styles */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #646cff;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.login-btn, .signup-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-btn {
+  background: transparent;
+  border: 1px solid #646cff;
+  color: #646cff;
+}
+
+.signup-btn {
+  background: #646cff;
+  border: 1px solid #646cff;
+  color: white;
+}
+
+.login-btn:hover {
+  background: #f0f0ff;
+}
+
+.signup-btn:hover {
+  background: #535bf2;
 }
 
 .logo {
@@ -39,4 +130,27 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Post card styles */
+.post-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+}
+
+.post-card h2 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.post-card p {
+  color: #666;
+  margin: 0;
 }
