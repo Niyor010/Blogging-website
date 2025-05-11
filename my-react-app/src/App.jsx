@@ -1,10 +1,11 @@
-import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
-import NavigationBar from './components/NavBar/NavigationBar';
-import Home from './pages/Home';
-import Design from './pages/Design';
-import Technology from './pages/Technology';
-import Travel from './pages/Travel';
-import './App.css';
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import NavigationBar from "./components/NavBar/NavigationBar";
+import Home from "./pages/Home";
+import Design from "./pages/Design";
+import Technology from "./pages/Technology";
+import Travel from "./pages/Travel";
+import "./App.css";
+import Upload from "./pages/Upload";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/design" element={<Design />} />
             <Route path="/technology" element={<Technology />} />
             <Route path="/travel" element={<Travel />} />
+            <Route path="/upload" element={<Upload />} />
           </Routes>
         </main>
       </div>
